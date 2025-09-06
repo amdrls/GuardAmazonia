@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Guardiões da Amazônia</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/logo.png" height="150" alt="logotipo do projeto">
+            <h1><a href="../Index.html">Guardiões da Amazônia</a></h1>
+        </div>
+        <nav class="botoes">
+            <button class="hamburger" id="hamburger-menu" aria-label="Abrir menu">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+            <ul id="nav-links">
+                <li><a href="../Index.html">Página Principal</a></li>
+                <li><a href="./biodiversidade.html">Biodiversidade</a></li>
+                <li><a href="./participe.html">Contato</a></li>
+                <li><a href="./mapa.html">Mapa Interativo</a></li>
+                <li><a href="./quiz.html">Acesse nosso Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 class="titulo-pagina">Mapa Interativo da região Amazônica</h2>
+        </section>
+        <section class="mapa-container">
+            <div class="mapa-wrapper">
+                <iframe id="mapaFrame"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8160930.979571141!2d-71.96924032622893!3d-2.8655090778008097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91e8605342744385%3A0x3d3c6dc1394a7fc7!2zQW1hesO0bmlh!5e0!3m2!1spt-BR!2sbr!4v1756942242136!5m2!1spt-BR!2sbr"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="mapa-botoes">
+                <button data-estado="acre">Rio Branco (AC)</button>
+                <button data-estado="amapa">Macapá (AP)</button>
+                <button data-estado="amazonas">Manaus (AM)</button>
+                <button data-estado="maranhao">São Luís (MA)</button>
+                <button data-estado="matogrosso">Cuiabá (MT)</button>
+                <button data-estado="para">Belém (PA)</button>
+                <button data-estado="rondonia">Porto Velho (RO)</button>
+                <button data-estado="roraima">Boa Vista (RR)</button>
+                <button data-estado="tocantins">Palmas (TO)</button>
+            </div>
+        </section>
+        <p class="paragrafo-pagina">Clique em um dos botões para ver a capital do estado no mapa.</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 - ALBS</p>
+        <div id="datetime"></div>
+    </footer>
+    
+    <script src="../js/quiz.js"></script>
+</body>
+</html>
